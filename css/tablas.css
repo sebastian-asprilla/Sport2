@@ -1,0 +1,31 @@
+body{
+    background-color: #dfdfdf;
+}
+
+
+
+table{
+    width: 100%;
+}
+td, th{
+    /* border: 1px solid black;
+    border-collapse: collapse; */
+    padding: 10px;
+}
+th{
+    text-align: left;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: blue;
+    position: relative;
+    height: 50px;
+    
+}
+
+select{
+    background-color: transparent;
+    color: #1e2c3d;
+}
