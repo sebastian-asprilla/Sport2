@@ -43,7 +43,7 @@ $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
             <nav class="menu">
                 <a href="index.html">Inicio</a>
                 <a href="Posiciones2.php">Tabla De Posiciones</a>
-                <a href="Partidos2.php">Partidos</a>
+                <a href="Partidos2.php">goles</a>
             </nav>
         </div>
     </header>
