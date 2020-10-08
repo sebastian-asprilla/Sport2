@@ -55,7 +55,7 @@ $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
                     <table id="tablaGoleadores" class="table table-striped table-bordered table-coodended" style="width:100%">
                         <thead class="text-center">
                             <tr>
-                                <th>Nombres</th>
+                                <th>Nombre</th>
                                 <th>Goles</th>
                             </tr>
 
