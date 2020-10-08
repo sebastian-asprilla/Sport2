@@ -1,11 +1,9 @@
 <?php
-<<<<<<< HEAD
- @session_start();
- if(!isset($_SESSION['usuario'])){
-     header('Location:index.html');
- }
-=======
->>>>>>> 5f606f1ff6e0523d33164979a7df64e8a464a145
+@session_start();
+if (!isset($_SESSION['usuario'])) {
+    header('Location:index.html');
+}
+
 include_once './bd/conexion.php';
 $objeto = new Conexion();
 $conexion = $objeto->Conectar();
@@ -16,7 +14,7 @@ $resultado->execute();
 $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
- 
+
 
 <!DOCTYPE html>
 <html lang="es">
@@ -49,16 +47,16 @@ $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
             <input type="checkbox" id="menu-bar">
             <label class="icon-menu" for="menu-bar"></label>
             <nav class="menu">
-<<<<<<< HEAD
+
                 <a href="index2.php">Inicio</a>
                 <a href="Posiciones.php">Tabla De Posiciones</a>
                 <a href="Goleadores.php">Goleadores</a>
                 <a href="salir.php">Cerrar sesión</a>
-=======
+
                 <a href="index.html">Inicio</a>
                 <a href="tablas.html">Tabla De Posiciones</a>
                 <a href="Goleadores.php">Goleadores</a>
->>>>>>> 5f606f1ff6e0523d33164979a7df64e8a464a145
+
             </nav>
         </div>
     </header>
@@ -143,7 +141,7 @@ $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="jquery/jquery-3.3.1.min.js"></script>    
+    <script src="jquery/jquery-3.3.1.min.js"></script>
     <!-- <script src="popper/popper.min.js"></script> -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
