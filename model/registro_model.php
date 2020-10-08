@@ -1,5 +1,5 @@
-
 <?php 
+
  @session_start();
  include('conexion_model.php');
 
@@ -61,12 +61,8 @@
                 
                 header('Location:../index2.php'); 
 
-               $resultado1=mysqli_fetch_row($resultado);
-               if($resultado1==true){
-                
-                header('Location:../index2.html');
-
                }
+
                if($resultado1==false){
 
                 header('Location:../LOGIN.html');
@@ -76,10 +72,10 @@
                    return $ex;
                }
               
-                  
-            }
+
         }
-    
+    }
+
       
  $object = new uso();
  
@@ -90,6 +86,5 @@
  $object->ingreso();
 
  }
- 
 
-
+ ?>
