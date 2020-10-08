@@ -1,8 +1,11 @@
 <?php
+<<<<<<< HEAD
  @session_start();
  if(!isset($_SESSION['usuario'])){
      header('Location:index.html');
  }
+=======
+>>>>>>> 5f606f1ff6e0523d33164979a7df64e8a464a145
 include_once './bd/conexion.php';
 $objeto = new Conexion();
 $conexion = $objeto->Conectar();
@@ -46,10 +49,16 @@ $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
             <input type="checkbox" id="menu-bar">
             <label class="icon-menu" for="menu-bar"></label>
             <nav class="menu">
+<<<<<<< HEAD
                 <a href="index2.php">Inicio</a>
                 <a href="Posiciones.php">Tabla De Posiciones</a>
                 <a href="Goleadores.php">Goleadores</a>
                 <a href="salir.php">Cerrar sesión</a>
+=======
+                <a href="index.html">Inicio</a>
+                <a href="tablas.html">Tabla De Posiciones</a>
+                <a href="Goleadores.php">Goleadores</a>
+>>>>>>> 5f606f1ff6e0523d33164979a7df64e8a464a145
             </nav>
         </div>
     </header>

@@ -11,7 +11,11 @@ $id = (isset($_POST['id'])) ? $_POST['id'] : '';
 
 switch($opcion){
     case 1: //alta
+<<<<<<< HEAD
         $consulta = "INSERT INTO goleadores (nombre, goles) VALUES('$nombre', '$goles') ";			
+=======
+        $consulta = "INSERT INTO goleadores (nombre,  goles) VALUES('$nombre',  '$goles') ";			
+>>>>>>> 5f606f1ff6e0523d33164979a7df64e8a464a145
         $resultado = $conexion->prepare($consulta);
         $resultado->execute(); 
 
