@@ -27,11 +27,8 @@ $(document).ready(function () {
         $("#formGoleadores").trigger("reset");
         $(".modal-header").css("background-color", "#1cc88a");
         $(".modal-header").css("color", "white");
-<<<<<<< HEAD
         $(".modal-title").text("Nuevo goleador");
-=======
         $(".modal-title").text("Nuevo Partido");
->>>>>>> 5f606f1ff6e0523d33164979a7df64e8a464a145
         $("#modalCRUD").modal("show");
         id = null;
         opcion = 1; //alta
@@ -54,10 +51,6 @@ $(document).ready(function () {
         $(".modal-header").css("color", "white");
         $(".modal-title").text("Editar Goleadores");
         $("#modalCRUD").modal("show");
-<<<<<<< HEAD
-=======
-
->>>>>>> 5f606f1ff6e0523d33164979a7df64e8a464a145
     });
 
     //botón BORRAR

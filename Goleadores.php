@@ -14,7 +14,6 @@ $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -50,11 +49,6 @@ $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
                 <a href="Posiciones.php">Tabla De Posiciones</a>
                 <a href="Partidos.php">Partidos</a>
                 <a href="salir.php">Cerrar sesión</a>
-
-                <a href="index.html">Inicio</a>
-                <a href="tablas.html">Tabla De Posiciones</a>
-                <a href="Partidos.php">Partidos</a>
-
             </nav>
         </div>
     </header>
@@ -128,7 +122,9 @@ $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
                     </div>
                 </form>
             </div>
+            <button type="button" class="btn btn-success">Éxito</button>
         </div>
+       
     </div>
 
     <!-- Optional JavaScript -->

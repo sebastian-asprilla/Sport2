@@ -45,10 +45,7 @@ $(document).ready(function () {
 
         $("#equipos").val(equipos);
         $("#lugar").val(lugar);
-<<<<<<< HEAD
         $("#fecha").val(fecha);
-=======
->>>>>>> 5f606f1ff6e0523d33164979a7df64e8a464a145
         $("#hora").val(hora);
         opcion = 2; //editar
 
@@ -93,10 +90,7 @@ $(document).ready(function () {
                 id = data[0].id;
                 equipos = data[0].equipos;
                 lugar = data[0].lugar;
-<<<<<<< HEAD
                 fecha = data[0].fecha;
-=======
->>>>>>> 5f606f1ff6e0523d33164979a7df64e8a464a145
                 hora = data[0].hora;
                 if (opcion == 1) { tablaPartido.row.add([id, equipos, lugar, hora]).draw(); }
                 else { tablaPartido.row(fila).data([id, equipos, lugar, hora]).draw(); }

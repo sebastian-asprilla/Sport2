@@ -52,11 +52,6 @@ $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
                 <a href="Posiciones.php">Tabla De Posiciones</a>
                 <a href="Goleadores.php">Goleadores</a>
                 <a href="salir.php">Cerrar sesión</a>
-
-                <a href="index.html">Inicio</a>
-                <a href="tablas.html">Tabla De Posiciones</a>
-                <a href="Goleadores.php">Goleadores</a>
-
             </nav>
         </div>
     </header>

@@ -49,7 +49,6 @@ $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
                 <a href="Partidos.php">Partidos</a>
                 <a href="Goleadores.php">Goleadores</a>
                 <a href="salir.php">Cerrar sesión</a>
-
             </nav>
         </div>
     </header>
