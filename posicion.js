@@ -29,7 +29,7 @@ $(document).ready(function () {
         $(".modal-header").css("color", "white");
         $(".modal-title").text("Nueva posicion");
         $("#modalCRUD").modal("show");
-        id = null;
+        id_posiciones = null;
         opcion = 1; //alta
     });
 
@@ -81,7 +81,6 @@ $(document).ready(function () {
                 data: { opcion: opcion, id_posiciones: id_posiciones },
                 success: function () {
                     tablaPosiciones.row(fila.parents('tr')).remove().draw();
-
                 }
             });
         }

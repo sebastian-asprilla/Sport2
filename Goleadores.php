@@ -91,7 +91,9 @@ $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
                         </tbody>
                     </table>
                 </div>
+                
             </div>
+            <a href="plantillapdf.php">Descargar PDF</a>
         </div>
     </div>
 
@@ -122,7 +124,7 @@ $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
                     </div>
                 </form>
             </div>
-            <button type="button" class="btn btn-success">Éxito</button>
+
         </div>
        
     </div>

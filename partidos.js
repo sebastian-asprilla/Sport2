@@ -45,10 +45,9 @@ $(document).ready(function () {
 
         $("#equipos").val(equipos);
         $("#lugar").val(lugar);
-        $("#fecha").val(fecha);
         $("#hora").val(hora);
         opcion = 2; //editar
-
+        
         $(".modal-header").css("background-color", "#4e73df");
         $(".modal-header").css("color", "white");
         $(".modal-title").text("Editar Equipos");
@@ -62,6 +61,7 @@ $(document).ready(function () {
         id = parseInt($(this).closest("tr").find('td:eq(0)').text());
         opcion = 3 //borrar
         var respuesta = confirm("¿Está seguro de eliminar el partido: " + id + "?");
+        
         if (respuesta) {
             $.ajax({
                 url: "bd/crudpartido.php",
@@ -69,7 +69,7 @@ $(document).ready(function () {
                 dataType: "json",
                 data: { opcion: opcion, id: id },
                 success: function () {
-                    tablaPartido.row(fila.parents('tr')).remove().draw();
+                    tablaPartido.row(fila.parents('tr')).remove().draw();  
                 }
             });
         }
